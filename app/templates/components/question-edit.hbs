@@ -1,22 +1,22 @@
-{{#if addNewQuestion}}
+{{#if editQuestionShow}}
   <form>
-    <div class="input-group">
+    <div class="input-group input-group-sm">
       <span class="input-group-addon">Question:</span>
         {{input value=question id="question" class="form-control" placeholder="Enter Your Question Here"}}
     </div>
     <br>
-    <div class="input-group">
+    <div class="input-group input-group-sm">
       <span class="input-group-addon">Asked By:</span>
         {{input value=author id="author" class="form-control" placeholder="John Doe"}}
     </div>
     <br>
-    <div class="input-group">
+    <div class="input-group input-group input-group-sm">
       <span class="input-group-addon">Notes:</span>
         {{input value=notes id="notes" class="form-control" placeholder="Further Information"}}
     </div>
     <br>
-    <button class="btn btn-default btn-block" {{action 'save1'}}>Submit Question</button>
+    <button class="btn btn-default btn-block" {{action 'update' question}}>Submit Question</button>
   </form>
 {{else}}
-  <button class="btn btn-default btn-block" {{action 'questionFormShow'}}>Posit a Question</button>
+  <button class="btn btn-default btn-block" {{action 'editQuestionShow'}}>Posit a Question</button>
 {{/if}}

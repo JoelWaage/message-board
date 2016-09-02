@@ -2,9 +2,7 @@
 <hr>
 <ul>
   {{#each model as |question|}}
-    <li class="index-author">{{question.author}} asks:</li>
-    <li class="index-question">{{#link-to 'question-display' question.id}}{{question.question}}{{/link-to}}</li>
-    <hr>
+    {{question-tile question=question}}
   {{/each}}
 </ul>
 {{new-question save2="save3"}}
