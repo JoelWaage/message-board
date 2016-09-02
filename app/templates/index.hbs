@@ -1,7 +1,11 @@
 <div class="container">
+  <h2>Questions:</h2>
+  <hr>
   <ul>
     {{#each model as |question|}}
-      <li>{{#link-to 'question-display' question.id}}{{question.question}}{{/link-to}}</li>
+      <li class="index-author">{{question.author}} asks:</li>
+      <li class="index-question">{{#link-to 'question-display' question.id}}{{question.question}}{{/link-to}}</li>
+      <hr>
     {{/each}}
   </ul>
 </div>
