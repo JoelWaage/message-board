@@ -1,13 +1,13 @@
 { "questions": [{
-    "question": "Is this json file going to upload?",
+    "query": "Is this json file going to upload?",
     "author": "Joel",
     "notes": "Because often times I forget a comma and firebase gets mad at me."
   }, {
-    "question": "Do I fully understand one to many within firebase?",
+    "query": "Do I fully understand one to many within firebase?",
     "author": "Timmy",
     "notes": "Probs"
   }, {
-    "question": "What movie should I see tonight?",
+    "query": "What movie should I see tonight?",
     "author": "Betsy",
     "notes": "I hate Nicolas Sparks and the ilk"
   }]

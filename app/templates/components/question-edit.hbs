@@ -2,21 +2,22 @@
   <form>
     <div class="input-group input-group-sm">
       <span class="input-group-addon">Question:</span>
-        {{input value=question id="question" class="form-control" placeholder="Enter Your Question Here"}}
+        {{input value=query id="query" class="form-control" placeholder=question.query}}
     </div>
     <br>
     <div class="input-group input-group-sm">
       <span class="input-group-addon">Asked By:</span>
-        {{input value=author id="author" class="form-control" placeholder="John Doe"}}
+        {{input value=author id="author" class="form-control" placeholder=question.author}}
     </div>
     <br>
     <div class="input-group input-group input-group-sm">
       <span class="input-group-addon">Notes:</span>
-        {{input value=notes id="notes" class="form-control" placeholder="Further Information"}}
+        {{input value=notes id="notes" class="form-control" placeholder=question.notes}}
     </div>
     <br>
-    <button class="btn btn-default btn-block" {{action 'update' question}}>Submit Question</button>
+    <button class="btn btn-default btn-block" {{action 'update' question}}>Submit Edits</button>
+    <hr>
   </form>
 {{else}}
-  <button class="btn btn-default btn-block" {{action 'editQuestionShow'}}>Posit a Question</button>
+  <button class="btn btn-default btn-sm" {{action 'editQuestionShow'}}>Edit</button>
 {{/if}}

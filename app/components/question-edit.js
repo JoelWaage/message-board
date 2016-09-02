@@ -6,5 +6,14 @@ export default Ember.Component.extend({
     editQuestionShow() {
       this.set('editQuestionShow', true);
     },
+    update(question) {
+      var params = {
+        query: this.get("query"),
+        author: this.get("author"),
+        notes: this.get("notes")
+      };
+      this.set('updateQuestionForm', false);
+      this.sendAction('update', question, params);
+    }
   }
 });
