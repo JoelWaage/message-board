@@ -4,8 +4,7 @@
 
 <ul>
   {{#each model.answers as |answer|}}
-    <li>{{answer.ans}}</li>
-    <li>{{answer.name}}</li>
+    {{answer-tile answer=answer}}
   {{/each}}
 </ul>
 
