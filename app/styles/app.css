@@ -9,3 +9,7 @@ li {
 .edit-form {
   float: right;
 }
+
+.new-button {
+  margin-bottom: 40px;
+}
