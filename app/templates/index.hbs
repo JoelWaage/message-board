@@ -1,3 +1,5 @@
-<div class="container">
-  <h1>test</h1>
-</div>
+<ul>
+  {{#each model as |question|}}
+    <li>{{question.question}}</li>
+  {{/each}}
+</ul>
