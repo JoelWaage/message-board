@@ -1,5 +1,6 @@
 {{#if addNewAnswer}}
   <form>
+    <button class="btn btn-default btn-block new-button" {{action 'save4'}}>Submit Answer</button>
     <div class="input-group">
       <span class="input-group-addon">Answer:</span>
         {{input value=ans id="ans" class="form-control" placeholder="Enter Your Answer Here"}}
@@ -10,8 +11,7 @@
         {{input value=name id="name" class="form-control" placeholder="Jane Doe"}}
     </div>
     <br>
-    <button class="btn btn-default btn-block new-button" {{action 'save1'}}>Submit Answe</button>
   </form>
 {{else}}
-  <button class="btn btn-default btn-block new-button" {{action 'answerFormShow'}}>Posit a Question</button>
+  <button class="btn btn-default btn-block new-button" {{action 'answerFormShow'}}>Submit an Answer</button>
 {{/if}}
