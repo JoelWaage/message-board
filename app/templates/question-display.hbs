@@ -2,4 +2,11 @@
 <h2>{{model.query}}</h2>
 <p>{{model.notes}}</p>
 
+<ul>
+  {{#each model.answers as |answer|}}
+    <li>{{answer.ans}}</li>
+    <li>{{answer.name}}</li>
+  {{/each}}
+</ul>
+
 {{answer-new save5="save6" question=model}}
