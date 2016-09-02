@@ -10,5 +10,12 @@
     "query": "What movie should I see tonight?",
     "author": "Betsy",
     "notes": "I hate Nicolas Sparks and the ilk"
-  }]
+  }],
+  "answers": [{
+    "name": "Roger",
+    "ans": "You should see 'The Lobster' tonight."
+  }, {
+    "name": "Ren",
+    "ans": "You should see 'Footloose' tonight!!"
+    }]
 }
