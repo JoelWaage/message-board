@@ -14,8 +14,9 @@
       <span class="input-group-addon">Notes:</span>
         <input type="text" class="form-control" placeholder="Further Information">
     </div>
+    <br>
     <button class="btn btn-default btn-block">Submit Question</button>
   </form>
 {{else}}
-  <button class="btn btn-default btn-block">Posit a Question</button>
+  <button class="btn btn-default btn-block" {{action 'questionFormShow'}}>Posit a Question</button>
 {{/if}}
