@@ -1,7 +1,7 @@
 <div class="container">
   <ul>
     {{#each model as |question|}}
-      <li>{{#link-to 'question-display'}}{{question.question}}{{/link-to}}</li>
+      <li>{{#link-to 'question-display' question.id}}{{question.question}}{{/link-to}}</li>
     {{/each}}
   </ul>
 </div>
