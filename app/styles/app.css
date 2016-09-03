@@ -2,6 +2,16 @@ li {
   list-style-type: none;
 }
 
+.banner-name {
+  font-size: 3em;
+  font-family: 'Indie Flower' , cursive;
+}
+
+.navbar {
+  margin-left: -30px;
+  margin-right: -30px;
+}
+
 .index-question {
   font-size: 2em;
 }
@@ -12,4 +22,9 @@ li {
 
 .new-button {
   margin-bottom: 40px;
+}
+
+.answer-post {
+  font-size: 1.7em;
+  margin-left: 30px;
 }

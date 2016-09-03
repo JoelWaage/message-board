@@ -1,7 +1,9 @@
+
+
 <p>{{model.author}} asks:</p>
 <h2>{{model.query}}</h2>
 <p>{{model.notes}}</p>
-
+<hr>
 <ul>
   {{#each model.answers as |answer|}}
     {{answer-tile answer=answer}}
