@@ -7,6 +7,8 @@
 <ul>
   {{#each model.answers as |answer|}}
     {{answer-tile answer=answer}}
+    <li class="computed">Or, to put it another way: <span class="sentence">{{answer.answerSentence}}</span></li>
+    <hr>
   {{/each}}
 </ul>
 

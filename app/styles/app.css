@@ -46,3 +46,12 @@ li {
 .many-response {
   color: #009900;
 }
+
+.sentence {
+  color: steelblue;
+  font-size: 1.3em;
+}
+
+.computed {
+  margin-left: 20%;
+}
