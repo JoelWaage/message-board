@@ -35,6 +35,10 @@ li {
   font-size: 2em;
 }
 
-.popular-response {
+.zero-response {
   color: crimson;
+}
+
+.some-response {
+  color: #e6e600;
 }
