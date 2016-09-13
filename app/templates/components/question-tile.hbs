@@ -1,3 +1,4 @@
 <li class="index-author">{{question.author}} asks: {{popular question}}</li>
 <li class="index-question">{{#link-to 'question-display' question.id}}{{question.query}}{{/link-to}}<span class="edit-form">{{question-edit question=question update="update"}}</span></li>
+<li class="favorite-button"><button class="btn btn-xs btn-default" {{action 'addToList' question}}>Add to Favorites</button></li>
 <hr>
